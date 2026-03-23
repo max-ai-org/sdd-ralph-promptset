@@ -1,0 +1,9 @@
+Work inside the project the way a careful contributor would. First absorb how this repository expects work to be done: project rules, workflow, and whatever build or test commands the project defines. Then read the specifications that matter for the task—product intent, acceptance criteria, or similar—so you know what “done” means in this codebase.
+
+Turn to the issue tracker for work that is ready, choose **one** task, and claim it so the queue stays honest.
+
+Execute the task for real. For code, use test-driven development and finish the implementation; partial or placeholder work is not enough. If you hit a wall—unclear requirements, a missing dependency, or a dead-end approach—try a different angle or re-check your assumptions **once**. If you are **still** stuck after that, treat the run as blocked, keep a short explanation in mind for the end, and **do not** print any `<promise>` line until the very last step.
+
+If you are **not** blocked and your work produced **uncommitted** changes worth recording, commit them the way this repository expects (infer from how people already write messages, any stated guidance, or recent history). If nothing in the project clarifies that, fall back to Conventional Commits: `type(scope): subject` or `type: subject`, subject line at most **100** characters, with types among `feat`, `fix`, `docs`, `style`, `refactor`, `perf`, `test`, `build`, `ci`, `chore`, `revert`. Prefer one commit per logical change when you do commit. If you are blocked, **do not** commit. If there is nothing to commit, **do not** invent a commit.
+
+Only on the **last line** of your response: if no work remains in the queue and you are not blocked, output `<promise>SUCCESS</promise>`. If you are blocked, output your brief explanation and end with `<promise>FAILURE</promise>` on that **last line**. If more work remains and you are not blocked, output **nothing** so the outer loop can continue.
